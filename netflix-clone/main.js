@@ -12,7 +12,7 @@ function selectItem(e) {
     //grab content item from DOM
     const tabContentItem = document.querySelector(`#${this.id}-content`);
     // add show class
-    console.log(this.id);
+
     tabContentItem.classList.add('show');
 }
 
