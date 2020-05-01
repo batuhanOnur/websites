@@ -32,10 +32,12 @@ html {
     --gray-text: #525252;
 }
 body {
+    font-family: "Ruh1",sans-serif;
 }
 
 h1 {
     font-size: var(--header1);
+    font-family: 'Vibes',sans-serif;
 }
 
 h2 {
@@ -50,15 +52,8 @@ h4,h5 {
     font-size: var(--header4);
 }
 
-li,button,label,input,p {
+li,button,label,input,p,a {
     font-size: var(--text);
-}
-
-.flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 ul{
@@ -67,4 +62,92 @@ ul{
 
 a {
     text-decoration: none;
+    color: black;
+}
+
+/* Helper Class*/
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* NAV and First SECTION*/
+.main-head {
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+    z-index: 2;
+    position: relative;
+}
+
+nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
+    padding: 2rem 0rem;
+}
+
+#logo {
+    flex: 1 1 20rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 20rem;
+}
+
+.hero {
+    min-height: 90vh; 
+    width: 95%;
+    margin: 0 0 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+}
+
+.hero-introduction {
+    flex: 2 1 40rem;
+    text-align:center;
+}
+
+.hero-introduction p {
+    padding: 5rem 10rem;
+}
+
+.hero-introduction h2 {
+    padding-top: 3rem;
+}
+
+.hero-introduction a {
+    padding: 2rem 8rem;
+    border: 3px solid black;
+    margin-bottom:4rem;
+}
+
+.hero-images{
+    flex: 1 1 40rem;
+    background: linear-gradient(#dad8dd, #dad1d4);
+    position: relative;
+    z-index:1;
+}
+
+.hero-elena {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.plant {
+    position: absolute;
+    bottom:0;
+    left: -20%;
+    z-index: -1;
+}
+
+.plant2 {
+    left: 40%;
 }
